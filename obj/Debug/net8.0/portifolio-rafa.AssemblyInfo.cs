@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("portifolio-rafa")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+541a14d2eca08f6717f794d6457c7c23e7295879")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("portifolio-rafa")]
 [assembly: System.Reflection.AssemblyTitleAttribute("portifolio-rafa")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

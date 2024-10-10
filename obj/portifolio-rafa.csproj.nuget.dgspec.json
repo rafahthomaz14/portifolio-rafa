@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mkt\\OneDrive\\Área de Trabalho\\portifolio-rafa\\portifolio-rafa.csproj": {}
+    "D:\\PORTIFOLIO\\ARQUIVO OK\\portifolio-rafa\\portifolio-rafa.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mkt\\OneDrive\\Área de Trabalho\\portifolio-rafa\\portifolio-rafa.csproj": {
+    "D:\\PORTIFOLIO\\ARQUIVO OK\\portifolio-rafa\\portifolio-rafa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mkt\\OneDrive\\Área de Trabalho\\portifolio-rafa\\portifolio-rafa.csproj",
+        "projectUniqueName": "D:\\PORTIFOLIO\\ARQUIVO OK\\portifolio-rafa\\portifolio-rafa.csproj",
         "projectName": "portifolio-rafa",
-        "projectPath": "C:\\Users\\mkt\\OneDrive\\Área de Trabalho\\portifolio-rafa\\portifolio-rafa.csproj",
+        "projectPath": "D:\\PORTIFOLIO\\ARQUIVO OK\\portifolio-rafa\\portifolio-rafa.csproj",
         "packagesPath": "C:\\Users\\mkt\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mkt\\OneDrive\\Área de Trabalho\\portifolio-rafa\\obj\\",
+        "outputPath": "D:\\PORTIFOLIO\\ARQUIVO OK\\portifolio-rafa\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -46,35 +46,35 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[8.0.5, )"
+              "version": "[8.0.6, )"
             },
             "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": {
               "target": "Package",
-              "version": "[8.0.5, )"
+              "version": "[8.0.6, )"
             }
           },
           "imports": [

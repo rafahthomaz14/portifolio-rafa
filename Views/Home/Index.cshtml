@@ -1,6 +1,12 @@
-﻿@{
+﻿@model IEnumerable<portifolio_rafa.Models.Projeto>
+
+@{
+  var novoProjeto = new portifolio_rafa.Models.Projeto(); // Cria uma nova instância para o formulário
+}
+@{
   ViewData["Title"] = "Home Page";
 }
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,25 +17,21 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
+
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
+
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
@@ -51,8 +53,6 @@
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
       <h1 class="sitename">Rafael Thomaz</h1>
     </a>
 
@@ -70,9 +70,11 @@
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> Sobre</a></li>
-        <li><a href="#skills"><i class="bi bi-lightbulb navicon"></i> Skills</a></li>
+        <li><a href="#skills"><i class="bi bi-star navicon"></i> Skills</a></li>
+
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Projetos</a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contato</a></li>
+        <li><a href="#form"><i class="bi bi-lightbulb navicon"></i> Sugestões</a></li>
       </ul>
     </nav>
 
@@ -89,17 +91,22 @@
             class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
 
-    </section><!-- /Hero Section -->
-    <!-- About Section -->
-    <section id="about" class="about section">
+    </section>
 
-      <!-- Section Title -->
+    <section id="about" class="about section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Sobre</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-          consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-          in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
+        <p>
+          Olá, meu nome é Rafael Henrique Thomaz, sou estudante de Análise e Desenvolvimento de Sistemas na Universidade
+          Paulista (UNIP), no campus de Araraquara, e atualmente estou no 3° semestre. Minha formação técnica é em
+          Desenvolvimento de Sistemas pela Etec Dr. Adail Nunes da Silva, em Taquaritinga.
+
+          Durante o curso técnico, desenvolvi um software de gerenciamento de cantina como parte do meu trabalho de
+          conclusão de curso, utilizando tecnologias como Visual Studio, C#, Crystal Reports e banco de dados SQL
+          Server.
+
+        </p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -110,9 +117,7 @@
           <div class="col-lg-8 content">
             <h2>Desenvolvedor</h2>
             <p class="fst-italic py-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna aliqua.
+              Tecnologias : HTML, CSS, JavaScript, C#, SQLite, SQLServer, MySql, ASP.NET
             </p>
             <div class="row">
               <div class="col-lg-6">
@@ -132,27 +137,25 @@
               </div>
             </div>
             <p class="py-3">
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et
-              ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
+
+              Atualmente, estou focado em aprimorar meus conhecimentos em desenvolvimento web, estudando ASP.NET com o
+              padrão MVC e trabalhando com banco de dados SQLite. Esse aprendizado tem sido uma experiência
+              enriquecedora,
+              permitindo-me explorar ainda mais o universo do desenvolvimento de software.
             </p>
           </div>
         </div>
-
       </div>
-
-    </section><!-- /About Section -->
+    </section>
 
     <div id="skills"></div>
     <br><br>
-    <!-- Skills Section -->
-    <section class="skills section light-background">
 
-      <!-- Section Title -->
+    <section class="skills section light-background">
       <div class="container section-title" data-aos="fade-up">
         <h2>Skills</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+        <p>Ferramentas mais utilizada durante meus estudos ...</p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -161,20 +164,20 @@
           <div class="col-lg-6">
 
             <div class="progress">
-              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
+              <span class="skill"><span>HTML</span> <i class="val">80%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
                 </div>
               </div>
-            </div><!-- End Skills Item -->
+            </div>
 
             <div class="progress">
-              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
+              <span class="skill"><span>CSS</span> <i class="val">80%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
                 </div>
               </div>
-            </div><!-- End Skills Item -->
+            </div>
 
             <div class="progress">
               <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
@@ -182,55 +185,48 @@
                 <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                 </div>
               </div>
-            </div><!-- End Skills Item -->
+            </div>
 
           </div>
 
           <div class="col-lg-6">
 
             <div class="progress">
-              <span class="skill"><span>C#</span> <i class="val">80%</i></span>
+              <span class="skill"><span>C#</span> <i class="val">70%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
                 </div>
               </div>
-            </div><!-- End Skills Item -->
+            </div>
 
             <div class="progress">
-              <span class="skill"><span>Bootstrap</span> <i class="val">90%</i></span>
+              <span class="skill"><span>Bootstrap</span> <i class="val">100%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                 </div>
               </div>
-            </div><!-- End Skills Item -->
+            </div>
 
             <div class="progress">
-              <span class="skill"><span>Banco de Dados</span> <i class="val">55%</i></span>
+              <span class="skill"><span>Banco de Dados</span> <i class="val">70%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
                 </div>
               </div>
-
-            </div><!-- End Skills Item -->
-
+            </div>
           </div>
-
         </div>
-
       </div>
+    </section>
 
-    </section><!-- /Skills Section -->
 
-    <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section ">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Projetos</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-          consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-          in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
+        <p>Aqui estão os projetos desenvolvidos durante meus estudos. Ao longo da minha graduação em Análise e
+          Desenvolvimento de Sistemas, venho trabalhando com diversas tecnologias, como MVC, C#, ASP.NET e SQLite. Esses
+          conhecimentos têm sido aplicados em meus projetos !
+      </div>
 
 
       <div class="container">
@@ -242,39 +238,139 @@
             <li data-filter=".filter-app">App</li>
             <li data-filter=".filter-C">C#</li>
             <li data-filter=".filter-HTML">HTML CSS JS</li>
-          </ul><!-- End Portfolio Filters -->
+          </ul>
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-HTML">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/img_mario-1.png" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/one-piece-1.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>HTML CSS</h4>
-                  <p>Site do filme Mario Bros</p>
-                  <a href="assets/img/portfolio/img_mario.png" title="Este projeto foi desenvolvidos com as tecnologias HTML, CSS e AOS Animate
-" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/rafahthomaz14/Web_mario?tab=readme-ov-file" title="More Details"
+                  <h4>HTML CSS JS</h4>
+                  <p>Projeto One Piece Web</p>
+                  <a href="assets/img/portfolio/one-piece.png"
+                    title="Este projeto foi desenvolvidos com as tecnologias HTML, CSS e JavaScript"
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <a href="https://github.com/rafahthomaz14/Projeto_one_piece" title="More Details"
                     class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
-          </div><!-- End Portfolio Container -->
 
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-HTML">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/one-piece-1.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>HTML CSS JS</h4>
+                  <p>Projeto One Piece Web</p>
+                  <a href="assets/img/portfolio/one-piece.png"
+                    title="Este projeto foi desenvolvidos com as tecnologias HTML, CSS e JavaScript"
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <a href="https://github.com/rafahthomaz14/Projeto_one_piece" title="More Details"
+                    class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/one-piece-1.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>HTML CSS JS</h4>
+                  <p>Projeto One Piece Web</p>
+                  <a href="assets/img/portfolio/one-piece.png"
+                    title="Este projeto foi desenvolvidos com as tecnologias HTML, CSS e JavaScript"
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <a href="https://github.com/rafahthomaz14/Projeto_one_piece" title="More Details"
+                    class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-C">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/one-piece-1.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>HTML CSS JS</h4>
+                  <p>Projeto One Piece Web</p>
+                  <a href="assets/img/portfolio/one-piece.png"
+                    title="Este projeto foi desenvolvidos com as tecnologias HTML, CSS e JavaScript"
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <a href="https://github.com/rafahthomaz14/Projeto_one_piece" title="More Details"
+                    class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-C">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/one-piece-1.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>HTML CSS JS</h4>
+                  <p>Projeto One Piece Web</p>
+                  <a href="assets/img/portfolio/one-piece.png"
+                    title="Este projeto foi desenvolvidos com as tecnologias HTML, CSS e JavaScript"
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <a href="https://github.com/rafahthomaz14/Projeto_one_piece" title="More Details"
+                    class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-C">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/one-piece-1.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>HTML CSS JS</h4>
+                  <p>Projeto One Piece Web</p>
+                  <a href="assets/img/portfolio/one-piece.png"
+                    title="Este projeto foi desenvolvidos com as tecnologias HTML, CSS e JavaScript"
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <a href="https://github.com/rafahthomaz14/Projeto_one_piece" title="More Details"
+                    class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-C">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/one-piece-1.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>HTML CSS JS</h4>
+                  <p>Projeto One Piece Web</p>
+                  <a href="assets/img/portfolio/one-piece.png"
+                    title="Este projeto foi desenvolvidos com as tecnologias HTML, CSS e JavaScript"
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <a href="https://github.com/rafahthomaz14/Projeto_one_piece" title="More Details"
+                    class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
       </div>
+    </section>
 
-    </section><!-- /Portfolio Section -->
-
-    <!-- Contact Section -->
     <section id="contact" class="contact section">
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+        <p>
+          Estou disponibilizando abaixo um formulário para entrar em contato comigo. Fique à vontade para enviar suas
+          perguntas, sugestões ou qualquer outra informação. Estou sempre aberto a novas oportunidades de aprendizado e
+          colaboração.</p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
@@ -286,7 +382,7 @@
                   <h3>Endereço</h3>
                   <p>Rua Americo Nicolleti, 221 Bairro Canaã Monte Alto - SP</p>
                 </div>
-              </div><!-- End Info Item -->
+              </div>
 
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                 <i class="bi bi-telephone flex-shrink-0"></i>
@@ -294,7 +390,7 @@
                   <h3>Telefone</h3>
                   <p>(16) 99369-6126</p>
                 </div>
-              </div><!-- End Info Item -->
+              </div>
 
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                 <i class="bi bi-envelope flex-shrink-0"></i>
@@ -302,7 +398,7 @@
                   <h3>Email</h3>
                   <p>rafaelthomaz466@gmail.com</p>
                 </div>
-              </div><!-- End Info Item -->
+              </div>
 
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3717.9151939287326!2d-48.47734652519836!3d-21.274824280436825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1728311652598!5m2!1spt-BR!2sbr"
@@ -343,14 +439,58 @@
                 </div>
               </div>
             </form>
-          </div><!-- End Contact Form -->
+          </div>
         </div>
       </div>
-    </section><!-- /Contact Section -->
+    </section>
+
+    <section id="form" class="form section">
+      <div class="container section-title" style="font-size: 16px;" data-aos="fade-up">
+        <h2>Deixe aqui sua sugestão de projetos</h2><br>
+
+        <div class="row">
+          <br>
+          <div class="col-md-6">
+
+            @Html.Partial("~/Views/Projeto/Create.cshtml", novoProjeto)
+          </div>
+          
+          <div class="col-md-6">
+            <div style="max-height: 290px; overflow-y: auto;">
+              <table class="table table-light table-hover">
+                <thead>
+                  <tr>
+                    <th>@Html.DisplayNameFor(model => model.First().Nome)</th>
+                    <th>@Html.DisplayNameFor(model => model.First().Descricao)</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  @if (Model != null && Model.Any())
+                  {
+                    foreach (var item in Model)
+                    {
+                      <tr>
+                        <td>@Html.DisplayFor(modelItem => item.Nome)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Descricao)</td>
+                      </tr>
+                    }
+                  }
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </section>
+
+
 
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
+  <footer id="footer" class="footer position-relative light-background ">
 
     <div class="container">
       <div class="copyright text-center ">
@@ -362,14 +502,11 @@
 
   </footer>
 
-  <!-- Scroll Top -->
+
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -380,8 +517,6 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>

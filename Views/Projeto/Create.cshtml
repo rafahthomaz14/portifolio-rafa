@@ -1,0 +1,24 @@
+@model portifolio_rafa.Models.Projeto
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+
+<form asp-controller="Projeto" asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Nome"><strong>Nome:</strong></label>
+        <input asp-for="Nome" class="form-control" placeholder="Digite o nome do projeto..." />
+        <span asp-validation-for="Nome" class="text-danger"></span>
+    </div>
+    <br>
+    <div class="form-group">
+        <label asp-for="Descricao"><strong>Descrição:</strong></label>
+        <textarea asp-for="Descricao" class="form-control" style="height: 150px;"
+            placeholder="Digite aqui uma breve descrição do projeto..."></textarea>
+        <span asp-validation-for="Descricao" class="text-danger"></span>
+    </div>
+    <br>
+    <button type="submit" class="col-6 btn btn-primary">Salvar</button>
+</form>
