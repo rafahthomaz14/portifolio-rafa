@@ -1205,7 +1205,6 @@ D:\PORTIFOLIO\ARQUIVO OK\portifolio-rafa\bin\Debug\net8.0\System.Composition.Run
 D:\PORTIFOLIO\ARQUIVO OK\portifolio-rafa\bin\Debug\net8.0\System.Composition.TypedParts.dll
 D:\PORTIFOLIO\ARQUIVO OK\portifolio-rafa\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
 D:\PORTIFOLIO\ARQUIVO OK\portifolio-rafa\bin\Debug\net8.0\System.Drawing.Common.dll
-D:\PORTIFOLIO\ARQUIVO OK\portifolio-rafa\bin\Debug\net8.0\System.Formats.Asn1.dll
 D:\PORTIFOLIO\ARQUIVO OK\portifolio-rafa\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 D:\PORTIFOLIO\ARQUIVO OK\portifolio-rafa\bin\Debug\net8.0\System.Memory.Data.dll
 D:\PORTIFOLIO\ARQUIVO OK\portifolio-rafa\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
@@ -1401,9 +1400,16 @@ D:\PORTIFOLIO\ARQUIVO OK\portifolio-rafa\obj\Debug\net8.0\staticwebassets.pack.j
 D:\PORTIFOLIO\ARQUIVO OK\portifolio-rafa\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\PORTIFOLIO\ARQUIVO OK\portifolio-rafa\obj\Debug\net8.0\scopedcss\bundle\portifolio-rafa.styles.css
 D:\PORTIFOLIO\ARQUIVO OK\portifolio-rafa\obj\Debug\net8.0\scopedcss\projectbundle\portifolio-rafa.bundle.scp.css
-D:\PORTIFOLIO\ARQUIVO OK\portifolio-rafa\obj\Debug\net8.0\portifolio-rafa.csproj.CopyComplete
 D:\PORTIFOLIO\ARQUIVO OK\portifolio-rafa\obj\Debug\net8.0\portifolio-rafa.dll
 D:\PORTIFOLIO\ARQUIVO OK\portifolio-rafa\obj\Debug\net8.0\refint\portifolio-rafa.dll
 D:\PORTIFOLIO\ARQUIVO OK\portifolio-rafa\obj\Debug\net8.0\portifolio-rafa.pdb
 D:\PORTIFOLIO\ARQUIVO OK\portifolio-rafa\obj\Debug\net8.0\portifolio-rafa.genruntimeconfig.cache
 D:\PORTIFOLIO\ARQUIVO OK\portifolio-rafa\obj\Debug\net8.0\ref\portifolio-rafa.dll
+D:\PORTIFOLIO\ARQUIVO OK\portifolio-rafa\bin\Debug\net8.0\publish\web.config
+D:\PORTIFOLIO\ARQUIVO OK\portifolio-rafa\bin\Debug\net8.0\publish\appsettings.Development.json
+D:\PORTIFOLIO\ARQUIVO OK\portifolio-rafa\bin\Debug\net8.0\publish\appsettings.json
+D:\PORTIFOLIO\ARQUIVO OK\portifolio-rafa\bin\Debug\net8.0\publish\portifolio-rafa.deps.json
+D:\PORTIFOLIO\ARQUIVO OK\portifolio-rafa\bin\Debug\net8.0\publish\portifolio-rafa.runtimeconfig.json
+D:\PORTIFOLIO\ARQUIVO OK\portifolio-rafa\bin\Debug\net8.0\publish\wwwroot\assets\vendor\bootstrap-icons\bootstrap-icons.json
+D:\PORTIFOLIO\ARQUIVO OK\portifolio-rafa\bin\Debug\net8.0\System.Formats.Asn1.dll
+D:\PORTIFOLIO\ARQUIVO OK\portifolio-rafa\obj\Debug\net8.0\portifolio-rafa.csproj.CopyComplete
